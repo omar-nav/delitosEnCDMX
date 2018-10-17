@@ -24,11 +24,11 @@ const messageIcon = L.icon({
 class Sharedmap extends Component {
   state = {
     location: {
-      lat: 51.505,
-      lng: -0.09,
+      lat: 19.40,
+      lng: -99.142966,
     },
     haveUsersLocation: false,
-    zoom: 2,
+    zoom: 12,
     userMessage: {
       name: '',
       message: ''
@@ -151,7 +151,7 @@ class Sharedmap extends Component {
         </Map>
         {
           !this.state.showMessageForm ?
-            <Button className="message-form" onClick={this.showMessageForm} color="info">Add a Message</Button> :
+            <Button className="message-form" onClick={this.showMessageForm} color="info">agregar delito</Button> :
             !this.state.sentMessage ?
               <MessageCardForm
                 cancelMessage={this.cancelMessage}
@@ -164,7 +164,7 @@ class Sharedmap extends Component {
                 formIsValid={this.formIsValid}
               /> :
               <Card body className="thanks-form">
-                <CardText>Thanks for submitting a message!</CardText>
+                <CardText>gracias por promover la seguridad</CardText>
               </Card>
         }
         {/* <Card className="footer">
