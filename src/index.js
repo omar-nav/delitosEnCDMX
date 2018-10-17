@@ -6,6 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import 'leaflet/dist/leaflet.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import registerServiceWorker from './serviceWorker';
 
 
 const WithRouter = () => <BrowserRouter><App /></BrowserRouter>;
@@ -13,3 +14,5 @@ ReactDOM.render(
   <WithRouter />,
   document.getElementById('root')
 );
+
+registerServiceWorker();
