@@ -5,7 +5,7 @@ import 'leaflet/dist/leaflet.css';
 // using webpack json loader we can import our geojson file like this
 import geojson from './municipios.json';
 // import local components Filter and ForkMe
-import Filter from './Filter.js';
+import Filter from './Filter';
 
 // store the map configuration properties in an object,
 // we could also move this to a separate file & import it if desired.
@@ -35,7 +35,7 @@ config.tileLayer = {
 // this eventually gets passed down to the Filter component
 let nombresDeMunicipios = [];
 
-class Map extends Component {
+class Crimemap extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -233,4 +233,4 @@ class Map extends Component {
   }
 }
 
-export default Map;
+export default Crimemap;

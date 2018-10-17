@@ -9,7 +9,7 @@ import messageLocationURL from './message_location.svg';
 import MessageCardForm from './MessageCardForm';
 import { getMessages, getLocation, sendMessage } from './API';
 
-import './App.css';
+import './Sharedmap.css';
 
 const myIcon = L.icon({
   iconUrl: userLocationURL,
@@ -21,7 +21,7 @@ const messageIcon = L.icon({
   iconSize: [50, 82]
 });
 
-class App extends Component {
+class Sharedmap extends Component {
   state = {
     location: {
       lat: 51.505,
@@ -175,4 +175,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Sharedmap;
