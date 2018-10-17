@@ -29,7 +29,7 @@ class Signup extends Component {
                 console.log(user)
                 toastr.success("Haz creado un nuevo usuario.")
                 const bonito = this.props.history
-                bonito.push('/crimemap')
+                bonito.push('/sharedmap')
             })
             .catch(e => toastr.error("clave equivocada"))
     }

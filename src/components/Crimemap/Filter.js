@@ -13,7 +13,7 @@ export default (props) => {
     < div className="filterMunicipios" >
       <hr />
       <h2>delitos en las alcaldías de CDMX</h2>
-      <h3>datos de <a href="http://www.beta.inegi.org.mx/app/biblioteca/ficha.html?upc=702825218744" target="_blank">INEGI</a> y <a href="https://datos.gob.mx/busca/dataset/secretariado-ejecutivo-del-sistema-nacional-de-seguridad-publica" target="_blank">SEGOB</a></h3>
+      <h3>datos de <a href="http://www.beta.inegi.org.mx/app/biblioteca/ficha.html?upc=702825218744" target="_blank" rel="noopener noreferrer">INEGI</a> y <a href="https://datos.gob.mx/busca/dataset/secretariado-ejecutivo-del-sistema-nacional-de-seguridad-publica" target="_blank" rel="noopener noreferrer">SEGOB</a></h3>
       <h4>Instituto Nacional de Estadística y Geografía</h4>
       <h4>Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública</h4>
       <a href="/signup">registrarse</a>&nbsp;&nbsp;<a href="/login">iniciar sesión</a>

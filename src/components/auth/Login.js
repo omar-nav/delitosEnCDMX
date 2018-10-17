@@ -25,7 +25,7 @@ class Login extends Component {
 
                 this.setState({ loading: false });
                 const bonito = this.props.history;
-                bonito.push('/map');
+                bonito.push('/crimemap');
 
             })
             .catch(e => {

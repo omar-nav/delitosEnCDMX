@@ -167,9 +167,9 @@ class Sharedmap extends Component {
                 <CardText>Thanks for submitting a message!</CardText>
               </Card>
         }
-        <Card className="footer">
-          <CardText> Made with <span role="img" aria-label="love">💚</span> by <a href="https://git.io/w3cj" target="_blank" rel="noopener noreferrer">w3cj</a></CardText>
-        </Card>
+        {/* <Card className="footer">
+          <CardText> Ironhack <span role="img" aria-label="love">💚</span> by <a href="https://git.io/w3cj" target="_blank" rel="noopener noreferrer">w3cj</a></CardText>
+        </Card> */}
       </div>
     );
   }
