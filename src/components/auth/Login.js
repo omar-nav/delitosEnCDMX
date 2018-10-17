@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-//import { Input, Button } from 'antd';
 import axios from 'axios';
 import toastr from 'toastr';
 
-const url = 'http://localhost:3000/login';
+const url = 'https://delitos-en-cdmx.herokuapp.com/login';
 
 class Login extends Component {
 
@@ -46,8 +45,7 @@ class Login extends Component {
     render() {
         const { auth, loading } = this.state
         return (
-            <form onSubmit={this.login} style={{ width: 600, margin: "0 auto", padding: 20 }}>
-                <h2>Inicia sesión</h2>
+            <form class="filterMunicipios" onSubmit={this.login} style={{ width: 600, margin: "0 auto", padding: 20 }}>
                 <p>
                     <input
                         name="email"

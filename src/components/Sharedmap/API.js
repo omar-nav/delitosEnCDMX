@@ -1,4 +1,6 @@
-const API_URL = window.location.hostname === 'localhost' ? 'http://localhost:5000/api/v1/messages' : 'https://api.guestm.app/api/v1/messages';
+// change port for demo 
+// todo fix request for messages
+const API_URL = window.location.hostname === 'localhost' ? 'https://delitos-en-cdmx.herokuapp.com:5000/api/v1/messages' : 'https://api.guestm.app/api/v1/messages';
 
 export function getMessages() {
   return fetch(API_URL)

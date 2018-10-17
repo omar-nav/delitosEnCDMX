@@ -24,7 +24,7 @@ class Signup extends Component {
         if (signup.password !== signup.password2) {
             return toastr.error('Esta clave no es igual')
         }
-        axios.post('http://localhost:3000/signup', signup)
+        axios.post('https://delitos-en-cdmx.herokuapp.com/signup', signup)
             .then(user => {
                 console.log(user)
                 toastr.success("Haz creado un nuevo usuario.")
@@ -37,9 +37,8 @@ class Signup extends Component {
     render() {
         const { signup, loading } = this.state
         return (
-            <form onSubmit={this.createUser} style={{ width: 600, margin: "0 auto", padding: 20 }}>
-                <h2>Date de alta</h2>
-                <p>
+            <form class="filterMunicipios" onSubmit={this.createUser} style={{ width: 600, margin: "0 auto", padding: 20 }}>
+                <p >
                     <input
                         name="username"
                         type="text"
