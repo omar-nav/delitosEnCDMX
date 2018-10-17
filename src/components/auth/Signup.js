@@ -27,7 +27,9 @@ class Signup extends Component {
         axios.post('http://localhost:3000/signup', signup)
             .then(user => {
                 console.log(user)
-                toastr.success("vientos!")
+                toastr.success("Haz creado un nuevo usuario.")
+                const bonito = this.props.history
+                bonito.push('/crimemap')
             })
             .catch(e => toastr.error("clave equivocada"))
     }
